@@ -1,0 +1,200 @@
+main {
+  text-align: center;
+  vertical-align: center;
+   font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  background: white;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  color: #333;
+  height: 500px;
+}
+
+.mainGrid {
+  display: grid;
+  grid-template-areas: "leftColumn middle rightColumn";
+}
+
+.mainBodyDisplay {
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+
+.display {
+  width: 800px;
+  max-height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  
+}
+
+.iconDisplay {
+  width: 70px;
+  max-width: 70px;
+  height: 70px;
+  background: transparent;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0.2rem;
+  padding: 0.2rem;
+}
+
+.getWeather {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  maxHeight: 600px;
+}
+
+.period {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 0px;
+  max-width: 600px;
+  overflow: auto;
+}
+
+.period > div {
+  word-wrap: break-word;
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: left;
+  gap: 0px;
+  line-height: 1.2;
+}
+
+.periodDisplay {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center;
+  gap: 0px;
+}
+
+h1 {
+  padding-bottom: 20px;
+}
+
+.periodButton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 73px;
+  width: 180px;
+  border-radius: 2px;
+  border: 0px solid transparent;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.buttonTitle {
+  font-size: 1.1rem;
+  font-weight: bold;
+  height: 30px;
+  width: 120px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.my-select {
+  font-size: 32px;
+  color: #33B4E5;
+  border: none;
+  background-color: transparent;
+  appearance: none;
+  background-image: url('/bluearrow.png');
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 25px;
+  padding-right: 20px;
+  width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center;
+  height: 50px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.my-select .dropdown-menu-toggle {
+  font-size: 20px;
+  background-color: transparent;
+}
+
+.my-select:focus {
+  outline: none;
+  background-color: transparent;
+}
+
+.my-select option {
+  border: none;
+  background-color: transparent;
+}
+
+.selectHolder {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem 1rem 4rem 1rem;
+  margin: 0.5rem;
+  gap: 1rem;
+  width: auto; 
+}
+
+.tempDisplay {
+  font-size: 50px;
+  color: black;
+}
+
+.tempAndIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  margin-top: 1rem;
+}
+
+.otherIcons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  margin-top: 0.3rem;
+  width: 130px
+}
+
+.otherIcons .text {
+  width: 70px;
+  text-align: center;
+}
