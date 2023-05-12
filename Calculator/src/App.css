@@ -1,0 +1,65 @@
+main {
+  text-align: center;
+  vertical-align: center;
+  background-color: purple;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@fo@font-face {
+  font-family: 'DigitalClockFont';
+  src: url('/fonts/digitalclockfont.ttf') format('truetype');
+}
+
+
+.calculator {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  /* width: 300px; */
+  /* height: 300px; */
+  background-color: #eee;
+  box-shadow: 0 0 25px #ccc;
+}
+.display {
+  background-color: grey;
+  text-align: right;    
+  font-size: 2em;
+  color: black;
+  margin-bottom: 20px;
+  font-size: 40px;
+  font-family: 'DigitalClockFont', Arial, sans-serif;
+
+}
+.row {
+  margin: 8px 0px 8px 0px;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+button {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+}
+
+.num {
+  background-color: orange;
+}
+.op {
+  background-color: turquoise;
+}
+.clear {
+  background-color: darkgray;
+}
+.zero {
+  width: 105px;
+  border-radius: 50px;
+}
