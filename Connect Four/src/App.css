@@ -1,0 +1,96 @@
+main {
+  text-align: center;
+  vertical-align: center;
+  line-height: 100vh;
+  display: flex;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  background-color: #f0f8ff;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  width: 400px;
+  height: 400px;
+  gap: 8px;
+  padding: 20px 20px 10px 20px;
+  background-color: purple;
+}
+
+.buttonsholder {
+  display: flex;
+  justify-content: space-evenly;
+  width: 400px;
+  background-color: purple;
+  padding: 10px 20px 0px 20px;
+  color: black;
+  overflow: hidden;
+}
+
+.title {
+  height: 50px;
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.button {
+  width: 150px;
+  border-radius: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  vertical-align: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.reset {
+  background-color: white;
+  color: black;
+}
+
+.winner {
+  color: white;
+  background-color: red;
+}
+
+.gameon {
+  color: white;
+  background-color: green;
+}
+
+.cell {
+  height: 100%;
+  width: 100%;
+  border: 1px solid grey;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.body {
+  width: 500px;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+}
+
+.trapezoid {
+  width: 440px;
+  height: 0;
+  border-bottom: 60px solid purple;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+}
